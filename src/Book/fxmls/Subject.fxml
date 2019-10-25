@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: ff9800; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Books.controller.SubjectSelectController">
+   <children>
+      <JFXComboBox fx:id="subject" focusColor="#ff9800" layoutX="94.0" layoutY="200.0" prefHeight="33.0" prefWidth="400.0" promptText="Select Your Subject" unFocusColor="#ff9800">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXComboBox>
+      <JFXButton fx:id="select" buttonType="RAISED" layoutX="176.0" layoutY="284.0" onAction="#onselect" prefHeight="45.0" prefWidth="225.0" ripplerFill="YELLOW" style="-fx-background-color: ff9800;" text="Select" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="192.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/TediousPlumpJackrabbit-size_restricted.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
